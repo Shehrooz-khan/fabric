@@ -1,0 +1,220 @@
+Arguments: 
+  /home/shehrooz/.nvm/versions/node/v8.14.1/bin/node /home/shehrooz/.nvm/versions/node/v8.14.1/bin/yarn
+
+PATH: 
+  /home/shehrooz/.nvm/versions/node/v8.14.1/bin:/home/shehrooz/fabric-samples/bin:/home/shehrooz/.npm-global/bin:/home/shehrooz/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/shehrooz/go/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  8.14.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: Unknown token: { line: 1, col: 0, type: 'INVALID', value: undefined } 1:0 in /home/shehrooz/first-network/chaincode/node/yarn.lock
+      at Parser.unexpected (/home/shehrooz/.nvm/versions/node/v8.14.1/lib/node_modules/yarn/lib/cli.js:63211:11)
+      at Parser.parse (/home/shehrooz/.nvm/versions/node/v8.14.1/lib/node_modules/yarn/lib/cli.js:63342:14)
+      at parse (/home/shehrooz/.nvm/versions/node/v8.14.1/lib/node_modules/yarn/lib/cli.js:63413:17)
+      at module.exports.exports.default (/home/shehrooz/.nvm/versions/node/v8.14.1/lib/node_modules/yarn/lib/cli.js:62982:96)
+      at Function.<anonymous> (/home/shehrooz/.nvm/versions/node/v8.14.1/lib/node_modules/yarn/lib/cli.js:3035:63)
+      at Generator.next (<anonymous>)
+      at step (/home/shehrooz/.nvm/versions/node/v8.14.1/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /home/shehrooz/.nvm/versions/node/v8.14.1/lib/node_modules/yarn/lib/cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "fisr-network-chaincode",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+      "build": "tsc",
+      "lint": "tslint --fix -c tslint.json './src/**/*.ts'",
+      "test": "npm run lint && mocha -r ts-node/register tests/**/*.spec.ts --reporter spec",
+      "test:w": "npm run lint && mocha -r ts-node/register tests/**/*.spec.ts --reporter spec --watch app/**/*.spec.ts --watch-extensions ts",
+      "clean": "rm -rf dist",
+      "start": "node dist/index.js"
+    },
+    "author": "xord",
+    "dependencies": {
+      "@theledger/fabric-chaincode-utils": "^3.0.2",
+      "@types/lodash": "^4.14.104",
+      "fabric-shim": "^1.2.0",
+      "lodash": "^4.17.5",
+      "winston": "^2.4.0",
+      "yup": "^0.24.1"
+    },
+    "devDependencies": {
+      "@theledger/fabric-mock-stub": "^2.0.1",
+      "@theledger/fabric-shim-crypto-types": "^1.0.5",
+      "@theledger/fabric-shim-types": "^2.0.7",
+      "@types/express-serve-static-core": "4.0.49",
+      "@types/node": "^8.5.8",
+      "@types/winston": "^2.3.8",
+      "@types/yup": "^0.24.1",
+      "nodemon": "^1.12.1",
+      "ts-node": "^5.0.1",
+      "tslint": "4.5.1",
+      "typescript": "^2.6.2"
+    },
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  {
+    "rules": {
+      "class-name": true,
+      "comment-format": [
+        false
+      ],
+      "curly": true,
+      "eofline": false,
+      "forin": true,
+      "indent": [
+        true,
+        "spaces",
+        4
+      ],
+      "label-position": true,
+      "max-line-length": [
+        true,
+        150
+      ],
+      "member-access": false,
+      "no-conditional-assignment": true,
+      "no-require-imports": false,
+      "member-ordering": [
+        true,
+        {
+          "order": [
+            "static-field",
+            "instance-field",
+            "constructor",
+            "public-instance-method",
+            "protected-instance-method",
+            "private-instance-method"
+          ]
+        }
+      ],
+      "no-any": false,
+      "no-arg": true,
+      "no-bitwise": true,
+      "no-magic-numbers": false,
+      "object-literal-key-quotes": [
+        false
+      ],
+      "object-literal-shorthand": false,
+      "no-mergeable-namespace": true,
+      "no-console": [
+        false,
+        "debug",
+        "info",
+        "time",
+        "timeEnd",
+        "trace"
+      ],
+      "no-construct": true,
+      "no-debugger": true,
+      "no-duplicate-variable": true,
+      "no-empty": true,
+      "no-empty-interface": true,
+      "no-eval": true,
+      "completed-docs": [
+        false
+      ],
+      "no-inferrable-types": [
+        true
+      ],
+      "no-invalid-this": [
+        true
+      ],
+      "cyclomatic-complexity": [
+        true,
+        20
+      ],
+      "no-shadowed-variable": true,
+      "no-string-literal": false,
+      "no-switch-case-fall-through": true,
+      "no-for-in-array": false,
+      "no-trailing-whitespace": false,
+      "no-unused-expression": true,
+      "no-unused-variable": true,
+      "no-unsafe-finally": true,
+      "no-unused-new": false,
+      "no-parameter-properties": false,
+      "no-use-before-declare": true,
+      "use-isnan": true,
+      "switch-default": true,
+      "jsdoc-format": false,
+      "no-var-requires": false,
+      "no-var-keyword": true,
+      "no-default-export": true,
+      "restrict-plus-operands": false,
+      "object-literal-sort-keys": false,
+      "prefer-for-of": true,
+      "no-null-keyword": false,
+      "new-parens": true,
+      "no-angle-bracket-type-assertion": false,
+      "no-consecutive-blank-lines": true,
+      "max-classes-per-file": [
+        true,
+        1
+      ],
+      "file-header": [
+        false
+      ],
+      "align": [
+        true
+      ],
+      "array-type": [
+        false
+      ],
+      "interface-name": [
+        false
+      ],
+      "arrow-parens": false,
+      "one-variable-per-declaration": [
+        false
+      ],
+      "one-line": [
+        true,
+        "check-open-brace",
+        "check-catch",
+        "check-else",
+        "check-finally"
+      ],
+      "quotemark": [
+        true,
+        "single",
+        "avoid-escape"
+      ],
+      "radix": false,
+      "semicolon": [
+        true
+      ],
+      "trailing-comma": [
+        false
+      ],
+      "triple-equals": [
+        false
+      ],
+      "typedef": [
+        true
+      ],
+      "variable-name": [
+        true,
+        "allow-leading-underscore",
+        "allow-pascal-case"
+      ],
+      "whitespace": [
+        false
+      ]
+    }
+  }
